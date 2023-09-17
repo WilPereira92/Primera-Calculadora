@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: blue;
+}
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+
+.btn-number {
+    padding: 0.50rem;
+    width: auto;
+    cursor: pointer;
+    border: 1px black solid;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-calculadora {
+    display: grid;
+    grid-template-areas: 'pantalla pantalla pantalla pantalla'
+    'menos multiplicar dividir backspace'
+    'siete ocho nueve C'
+    'cuatro cinco seis mas'
+    'uno dos tres igual'
+    'cero cero cero igual';
+    width: 23rem;
+    background-color: rgba(187, 187, 249, 0.5);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+#pantalla {
+    grid-area: pantalla;
+    width: 100%;
+    cursor: auto;
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#uno {
+    grid-area: uno;
+}
+
+#dos {
+    grid-area: dos;
+}
+#tres {
+    grid-area: tres;
+}
+#cuatro {
+    grid-area: cuatro;
+}
+#cinco {
+    grid-area: cinco;
+}
+#seis {
+    grid-area: seis;
+}
+#siete{
+    grid-area: siete;
+}
+#ocho {
+    grid-area: ocho;
+}
+#nueve {
+    grid-area: nueve;
+}
+#cero {
+    grid-area: cero;
+}
+
+#igualSigno {
+    grid-area: igual;
+    height: auto;
+}
+#borrar-ultimo {
+    grid-area: backspace;
+}
+#borrar-todo{
+    grid-area: C;
+}
+#mas {
+    grid-area: mas;
+}
+#menos{
+    grid-area: menos;
+}
+#por {
+    grid-area: multiplicar;
+}
+#dividir {
+    grid-area: dividir;
+}
+
